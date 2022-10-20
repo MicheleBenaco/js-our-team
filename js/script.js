@@ -76,6 +76,6 @@ for(let i = 0; i< datiTeam.length; i++){
    card2.appendChild(div);
 }
 
-const img = document.createElement('img');
-img.src="./img/wayne-barnett-founder-ceo.jpg"
-card3.appendChild(img)
+// const img = document.createElement('img');
+// img.src="./img/wayne-barnett-founder-ceo.jpg"
+// card3.appendChild(img)

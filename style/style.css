@@ -1,3 +1,8 @@
+body{
+    background-image: url(../img/ufficieuffici-2.jpg);
+    background-repeat: no-repeat
+}
+
 .nomi{
   padding: 10px;
   color: white;
