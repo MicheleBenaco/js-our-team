@@ -14,7 +14,11 @@
 // Aggiungere attraverso un form un membro al team
 
 const row = document.getElementById('row');
-const card = document.getElementById('card')
+const card1 = document.getElementById('card1');
+const card2 = document.getElementById('card2')
+const card3 = document.getElementById('card3')
+const titolo = document.getElementById('titolo')
+
 // creo l array di ogetti con le informazioni in possesso
 
  let  datiTeam = [
@@ -50,3 +54,28 @@ for(let key of datiTeam ){
     console.log(key);
     datiTeam.nome
 }
+// const div = document.createElement('div');
+// div.innerText = datiTeam[0].nome;
+// card.appendChild(div);
+
+const h1 = document.createElement('h1')
+h1.innerHTML = ' la mia squadra : ';
+titolo.appendChild(h1);
+
+
+for(let i = 0; i< datiTeam.length; i++){
+   const div = document.createElement('div');
+   div.classList.add("nomi");
+   div.innerText = datiTeam[i].nome;
+   card1.appendChild(div);
+}
+for(let i = 0; i< datiTeam.length; i++){
+   const div = document.createElement('div');
+   div.classList.add("role");
+   div.innerText = datiTeam[i].role;
+   card2.appendChild(div);
+}
+
+const img = document.createElement('img');
+img.src="./img/wayne-barnett-founder-ceo.jpg"
+card3.appendChild(img)
