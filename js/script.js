@@ -13,8 +13,8 @@
 // BONUS 3:
 // Aggiungere attraverso un form un membro al team
 
-
-
+const row = document.getElementById('row');
+const card = document.getElementById('card')
 // creo l array di ogetti con le informazioni in possesso
 
  let  datiTeam = [
@@ -44,9 +44,9 @@
  }
 
  ]
+// Faccio un ciclo che vede coso ho dentro l'array 
 
-// Faccio un ciclo che vede coso ho dentro l'array e ne prende gli oggetti
-
-for(let i = 0; i<datiTeam.length; i++){
-    console.log(datiTeam)
+for(let key of datiTeam ){
+    console.log(key);
+    datiTeam.nome
 }
